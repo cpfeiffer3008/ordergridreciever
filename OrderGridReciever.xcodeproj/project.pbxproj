@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA5157D61ECD77E400A03B9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5157D51ECD77E400A03B9F /* AppDelegate.swift */; };
+		AA5157D81ECD77E400A03B9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5157D71ECD77E400A03B9F /* ViewController.swift */; };
+		AA5157DB1ECD77E400A03B9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5157D91ECD77E400A03B9F /* Main.storyboard */; };
+		AA5157DD1ECD77E400A03B9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5157DC1ECD77E400A03B9F /* Assets.xcassets */; };
+		AA5157E01ECD77E400A03B9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5157DE1ECD77E400A03B9F /* LaunchScreen.storyboard */; };
+		AA5157EB1ECD77E400A03B9F /* OrderGridRecieverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5157EA1ECD77E400A03B9F /* OrderGridRecieverTests.swift */; };
+		AA5157F61ECD77E400A03B9F /* OrderGridRecieverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5157F51ECD77E400A03B9F /* OrderGridRecieverUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA5157E71ECD77E400A03B9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA5157CA1ECD77E400A03B9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA5157D11ECD77E400A03B9F;
+			remoteInfo = OrderGridReciever;
+		};
+		AA5157F21ECD77E400A03B9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA5157CA1ECD77E400A03B9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA5157D11ECD77E400A03B9F;
+			remoteInfo = OrderGridReciever;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA5157D21ECD77E400A03B9F /* OrderGridReciever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderGridReciever.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5157D51ECD77E400A03B9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA5157D71ECD77E400A03B9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA5157DA1ECD77E400A03B9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA5157DC1ECD77E400A03B9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA5157DF1ECD77E400A03B9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA5157E11ECD77E400A03B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA5157E61ECD77E400A03B9F /* OrderGridRecieverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderGridRecieverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5157EA1ECD77E400A03B9F /* OrderGridRecieverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderGridRecieverTests.swift; sourceTree = "<group>"; };
+		AA5157EC1ECD77E400A03B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA5157F11ECD77E400A03B9F /* OrderGridRecieverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderGridRecieverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5157F51ECD77E400A03B9F /* OrderGridRecieverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderGridRecieverUITests.swift; sourceTree = "<group>"; };
+		AA5157F71ECD77E400A03B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA5157CF1ECD77E400A03B9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5157E31ECD77E400A03B9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5157EE1ECD77E400A03B9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA5157C91ECD77E400A03B9F = {
+			isa = PBXGroup;
+			children = (
+				AA5157D41ECD77E400A03B9F /* OrderGridReciever */,
+				AA5157E91ECD77E400A03B9F /* OrderGridRecieverTests */,
+				AA5157F41ECD77E400A03B9F /* OrderGridRecieverUITests */,
+				AA5157D31ECD77E400A03B9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA5157D31ECD77E400A03B9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA5157D21ECD77E400A03B9F /* OrderGridReciever.app */,
+				AA5157E61ECD77E400A03B9F /* OrderGridRecieverTests.xctest */,
+				AA5157F11ECD77E400A03B9F /* OrderGridRecieverUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA5157D41ECD77E400A03B9F /* OrderGridReciever */ = {
+			isa = PBXGroup;
+			children = (
+				AA5157D51ECD77E400A03B9F /* AppDelegate.swift */,
+				AA5157D71ECD77E400A03B9F /* ViewController.swift */,
+				AA5157D91ECD77E400A03B9F /* Main.storyboard */,
+				AA5157DC1ECD77E400A03B9F /* Assets.xcassets */,
+				AA5157DE1ECD77E400A03B9F /* LaunchScreen.storyboard */,
+				AA5157E11ECD77E400A03B9F /* Info.plist */,
+			);
+			path = OrderGridReciever;
+			sourceTree = "<group>";
+		};
+		AA5157E91ECD77E400A03B9F /* OrderGridRecieverTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA5157EA1ECD77E400A03B9F /* OrderGridRecieverTests.swift */,
+				AA5157EC1ECD77E400A03B9F /* Info.plist */,
+			);
+			path = OrderGridRecieverTests;
+			sourceTree = "<group>";
+		};
+		AA5157F41ECD77E400A03B9F /* OrderGridRecieverUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA5157F51ECD77E400A03B9F /* OrderGridRecieverUITests.swift */,
+				AA5157F71ECD77E400A03B9F /* Info.plist */,
+			);
+			path = OrderGridRecieverUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA5157D11ECD77E400A03B9F /* OrderGridReciever */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA5157FA1ECD77E400A03B9F /* Build configuration list for PBXNativeTarget "OrderGridReciever" */;
+			buildPhases = (
+				AA5157CE1ECD77E400A03B9F /* Sources */,
+				AA5157CF1ECD77E400A03B9F /* Frameworks */,
+				AA5157D01ECD77E400A03B9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrderGridReciever;
+			productName = OrderGridReciever;
+			productReference = AA5157D21ECD77E400A03B9F /* OrderGridReciever.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA5157E51ECD77E400A03B9F /* OrderGridRecieverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA5157FD1ECD77E400A03B9F /* Build configuration list for PBXNativeTarget "OrderGridRecieverTests" */;
+			buildPhases = (
+				AA5157E21ECD77E400A03B9F /* Sources */,
+				AA5157E31ECD77E400A03B9F /* Frameworks */,
+				AA5157E41ECD77E400A03B9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA5157E81ECD77E400A03B9F /* PBXTargetDependency */,
+			);
+			name = OrderGridRecieverTests;
+			productName = OrderGridRecieverTests;
+			productReference = AA5157E61ECD77E400A03B9F /* OrderGridRecieverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA5157F01ECD77E400A03B9F /* OrderGridRecieverUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA5158001ECD77E400A03B9F /* Build configuration list for PBXNativeTarget "OrderGridRecieverUITests" */;
+			buildPhases = (
+				AA5157ED1ECD77E400A03B9F /* Sources */,
+				AA5157EE1ECD77E400A03B9F /* Frameworks */,
+				AA5157EF1ECD77E400A03B9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA5157F31ECD77E400A03B9F /* PBXTargetDependency */,
+			);
+			name = OrderGridRecieverUITests;
+			productName = OrderGridRecieverUITests;
+			productReference = AA5157F11ECD77E400A03B9F /* OrderGridRecieverUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA5157CA1ECD77E400A03B9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Christian Pfeiffer";
+				TargetAttributes = {
+					AA5157D11ECD77E400A03B9F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5H5DB854MQ;
+						ProvisioningStyle = Automatic;
+					};
+					AA5157E51ECD77E400A03B9F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5H5DB854MQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AA5157D11ECD77E400A03B9F;
+					};
+					AA5157F01ECD77E400A03B9F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5H5DB854MQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AA5157D11ECD77E400A03B9F;
+					};
+				};
+			};
+			buildConfigurationList = AA5157CD1ECD77E400A03B9F /* Build configuration list for PBXProject "OrderGridReciever" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA5157C91ECD77E400A03B9F;
+			productRefGroup = AA5157D31ECD77E400A03B9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA5157D11ECD77E400A03B9F /* OrderGridReciever */,
+				AA5157E51ECD77E400A03B9F /* OrderGridRecieverTests */,
+				AA5157F01ECD77E400A03B9F /* OrderGridRecieverUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA5157D01ECD77E400A03B9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5157E01ECD77E400A03B9F /* LaunchScreen.storyboard in Resources */,
+				AA5157DD1ECD77E400A03B9F /* Assets.xcassets in Resources */,
+				AA5157DB1ECD77E400A03B9F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5157E41ECD77E400A03B9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5157EF1ECD77E400A03B9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA5157CE1ECD77E400A03B9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5157D81ECD77E400A03B9F /* ViewController.swift in Sources */,
+				AA5157D61ECD77E400A03B9F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5157E21ECD77E400A03B9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5157EB1ECD77E400A03B9F /* OrderGridRecieverTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5157ED1ECD77E400A03B9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5157F61ECD77E400A03B9F /* OrderGridRecieverUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA5157E81ECD77E400A03B9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA5157D11ECD77E400A03B9F /* OrderGridReciever */;
+			targetProxy = AA5157E71ECD77E400A03B9F /* PBXContainerItemProxy */;
+		};
+		AA5157F31ECD77E400A03B9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA5157D11ECD77E400A03B9F /* OrderGridReciever */;
+			targetProxy = AA5157F21ECD77E400A03B9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA5157D91ECD77E400A03B9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA5157DA1ECD77E400A03B9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA5157DE1ECD77E400A03B9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA5157DF1ECD77E400A03B9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA5157F81ECD77E400A03B9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA5157F91ECD77E400A03B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA5157FB1ECD77E400A03B9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5H5DB854MQ;
+				INFOPLIST_FILE = OrderGridReciever/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cpfeiffer.OrderGridReciever;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AA5157FC1ECD77E400A03B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5H5DB854MQ;
+				INFOPLIST_FILE = OrderGridReciever/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cpfeiffer.OrderGridReciever;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AA5157FE1ECD77E400A03B9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5H5DB854MQ;
+				INFOPLIST_FILE = OrderGridRecieverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cpfeiffer.OrderGridRecieverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrderGridReciever.app/OrderGridReciever";
+			};
+			name = Debug;
+		};
+		AA5157FF1ECD77E400A03B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5H5DB854MQ;
+				INFOPLIST_FILE = OrderGridRecieverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cpfeiffer.OrderGridRecieverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrderGridReciever.app/OrderGridReciever";
+			};
+			name = Release;
+		};
+		AA5158011ECD77E400A03B9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5H5DB854MQ;
+				INFOPLIST_FILE = OrderGridRecieverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cpfeiffer.OrderGridRecieverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = OrderGridReciever;
+			};
+			name = Debug;
+		};
+		AA5158021ECD77E400A03B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5H5DB854MQ;
+				INFOPLIST_FILE = OrderGridRecieverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cpfeiffer.OrderGridRecieverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = OrderGridReciever;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA5157CD1ECD77E400A03B9F /* Build configuration list for PBXProject "OrderGridReciever" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5157F81ECD77E400A03B9F /* Debug */,
+				AA5157F91ECD77E400A03B9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA5157FA1ECD77E400A03B9F /* Build configuration list for PBXNativeTarget "OrderGridReciever" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5157FB1ECD77E400A03B9F /* Debug */,
+				AA5157FC1ECD77E400A03B9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AA5157FD1ECD77E400A03B9F /* Build configuration list for PBXNativeTarget "OrderGridRecieverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5157FE1ECD77E400A03B9F /* Debug */,
+				AA5157FF1ECD77E400A03B9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AA5158001ECD77E400A03B9F /* Build configuration list for PBXNativeTarget "OrderGridRecieverUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5158011ECD77E400A03B9F /* Debug */,
+				AA5158021ECD77E400A03B9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA5157CA1ECD77E400A03B9F /* Project object */;
+}
