@@ -9,10 +9,38 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var OrderTable: UITableView!
+    
+    
+    var datasource : OrderDataSource!
+    var delegate : OrderDelegate!
+    var model : FirebaseRDModel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        OrderTable.allowsMultipleSelectionDuringEditing = false
+        
+        datasource = OrderDataSource()
+        delegate = OrderDelegate()
+        
+        OrderTable.delegate = delegate
+        OrderTable.dataSource = datasource
+        
+        model = FirebaseRDModel()
+        model.observeFirebase()
+        print(model.numberofEntries())
+        
+        let nc = NotificationCenter.default
+        
+        nc.addObserver(self, selector: #selector(reloadOrderTable), name: Notification.Name("firereload"), object: nil)
+
+
+    }
+    
+    func reloadOrderTable(){
+        OrderTable.reloadData()
     }
 
     override func didReceiveMemoryWarning() {

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D8A9436E8FD016AA88350F8 /* Pods_OrderGridRecieverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6C7CD4E2BF38E8D37E1685 /* Pods_OrderGridRecieverUITests.framework */; };
+		8F818F6EFEC500FBBDDFDABB /* Pods_OrderGridRecieverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0172B868A077AA2FB8AD5E /* Pods_OrderGridRecieverTests.framework */; };
+		AA2F4E031EE920660049EE47 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA2F4E021EE920660049EE47 /* GoogleService-Info.plist */; };
 		AA5157D61ECD77E400A03B9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5157D51ECD77E400A03B9F /* AppDelegate.swift */; };
 		AA5157D81ECD77E400A03B9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5157D71ECD77E400A03B9F /* ViewController.swift */; };
 		AA5157DB1ECD77E400A03B9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5157D91ECD77E400A03B9F /* Main.storyboard */; };
@@ -14,6 +17,15 @@
 		AA5157E01ECD77E400A03B9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5157DE1ECD77E400A03B9F /* LaunchScreen.storyboard */; };
 		AA5157EB1ECD77E400A03B9F /* OrderGridRecieverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5157EA1ECD77E400A03B9F /* OrderGridRecieverTests.swift */; };
 		AA5157F61ECD77E400A03B9F /* OrderGridRecieverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5157F51ECD77E400A03B9F /* OrderGridRecieverUITests.swift */; };
+		AA5158071ECD7F7600A03B9F /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5158061ECD7F7600A03B9F /* OrderCell.swift */; };
+		AA5158091ECD7F8400A03B9F /* OrderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5158081ECD7F8400A03B9F /* OrderDelegate.swift */; };
+		AA51580B1ECD7F8F00A03B9F /* OrderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA51580A1ECD7F8F00A03B9F /* OrderDataSource.swift */; };
+		AA93551A1EF16C7700DA1876 /* OrderConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9355191EF16C7700DA1876 /* OrderConfigViewController.swift */; };
+		AAA524511ED3138A00304B1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAA524501ED3138A00304B1C /* GoogleService-Info.plist */; };
+		AAA524531ED3154600304B1C /* FirebaseRDModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA524521ED3154600304B1C /* FirebaseRDModel.swift */; };
+		AAE5C8CF1ED32DE600D7AFF2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE5C8CE1ED32DE600D7AFF2 /* User.swift */; };
+		AAE5C8D11ED32E4200D7AFF2 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE5C8D01ED32E4200D7AFF2 /* OrderItem.swift */; };
+		EB2475EB8E7CB3393D56BFC7 /* Pods_OrderGridReciever.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C28277C6E3F918F7952CE3 /* Pods_OrderGridReciever.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E6EF3C5BB552E4108214377 /* Pods-OrderGridReciever.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderGridReciever.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrderGridReciever/Pods-OrderGridReciever.release.xcconfig"; sourceTree = "<group>"; };
+		4A715F1542021CFAA4B5F763 /* Pods-OrderGridRecieverUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderGridRecieverUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrderGridRecieverUITests/Pods-OrderGridRecieverUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		50ADACF0CA94A9F09177F211 /* Pods-OrderGridReciever.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderGridReciever.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrderGridReciever/Pods-OrderGridReciever.debug.xcconfig"; sourceTree = "<group>"; };
+		73E1673319E685F88666E2A4 /* Pods-OrderGridRecieverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderGridRecieverTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrderGridRecieverTests/Pods-OrderGridRecieverTests.release.xcconfig"; sourceTree = "<group>"; };
+		7B6C7CD4E2BF38E8D37E1685 /* Pods_OrderGridRecieverUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderGridRecieverUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88FF7E4F56691159646A1696 /* Pods-OrderGridRecieverUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderGridRecieverUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrderGridRecieverUITests/Pods-OrderGridRecieverUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8F0172B868A077AA2FB8AD5E /* Pods_OrderGridRecieverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderGridRecieverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA2F4E021EE920660049EE47 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AA5157D21ECD77E400A03B9F /* OrderGridReciever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderGridReciever.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5157D51ECD77E400A03B9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA5157D71ECD77E400A03B9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +67,16 @@
 		AA5157F11ECD77E400A03B9F /* OrderGridRecieverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderGridRecieverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5157F51ECD77E400A03B9F /* OrderGridRecieverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderGridRecieverUITests.swift; sourceTree = "<group>"; };
 		AA5157F71ECD77E400A03B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA5158061ECD7F7600A03B9F /* OrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		AA5158081ECD7F8400A03B9F /* OrderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDelegate.swift; sourceTree = "<group>"; };
+		AA51580A1ECD7F8F00A03B9F /* OrderDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDataSource.swift; sourceTree = "<group>"; };
+		AA9355191EF16C7700DA1876 /* OrderConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderConfigViewController.swift; sourceTree = "<group>"; };
+		AAA524501ED3138A00304B1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AAA524521ED3154600304B1C /* FirebaseRDModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseRDModel.swift; sourceTree = "<group>"; };
+		AAE5C8CE1ED32DE600D7AFF2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AAE5C8D01ED32E4200D7AFF2 /* OrderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		F6C28277C6E3F918F7952CE3 /* Pods_OrderGridReciever.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderGridReciever.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7557A99FDAFF211244DA951 /* Pods-OrderGridRecieverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderGridRecieverTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrderGridRecieverTests/Pods-OrderGridRecieverTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB2475EB8E7CB3393D56BFC7 /* Pods_OrderGridReciever.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F818F6EFEC500FBBDDFDABB /* Pods_OrderGridRecieverTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +100,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D8A9436E8FD016AA88350F8 /* Pods_OrderGridRecieverUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A5E6B7CCDE17F7BD7FBDD10A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6C28277C6E3F918F7952CE3 /* Pods_OrderGridReciever.framework */,
+				8F0172B868A077AA2FB8AD5E /* Pods_OrderGridRecieverTests.framework */,
+				7B6C7CD4E2BF38E8D37E1685 /* Pods_OrderGridRecieverUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AA5157C91ECD77E400A03B9F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +124,8 @@
 				AA5157E91ECD77E400A03B9F /* OrderGridRecieverTests */,
 				AA5157F41ECD77E400A03B9F /* OrderGridRecieverUITests */,
 				AA5157D31ECD77E400A03B9F /* Products */,
+				B4B67802E0A321722341C261 /* Pods */,
+				A5E6B7CCDE17F7BD7FBDD10A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +142,15 @@
 		AA5157D41ECD77E400A03B9F /* OrderGridReciever */ = {
 			isa = PBXGroup;
 			children = (
+				AA51580E1ECD8FE900A03B9F /* Model */,
+				AA51580C1ECD80A700A03B9F /* ConfigScreen */,
+				AA5158031ECD7F4400A03B9F /* OrderTable */,
 				AA5157D51ECD77E400A03B9F /* AppDelegate.swift */,
-				AA5157D71ECD77E400A03B9F /* ViewController.swift */,
+				AA2F4E021EE920660049EE47 /* GoogleService-Info.plist */,
 				AA5157D91ECD77E400A03B9F /* Main.storyboard */,
 				AA5157DC1ECD77E400A03B9F /* Assets.xcassets */,
 				AA5157DE1ECD77E400A03B9F /* LaunchScreen.storyboard */,
+				AAA524501ED3138A00304B1C /* GoogleService-Info.plist */,
 				AA5157E11ECD77E400A03B9F /* Info.plist */,
 			);
 			path = OrderGridReciever;
@@ -125,6 +174,48 @@
 			path = OrderGridRecieverUITests;
 			sourceTree = "<group>";
 		};
+		AA5158031ECD7F4400A03B9F /* OrderTable */ = {
+			isa = PBXGroup;
+			children = (
+				AA5157D71ECD77E400A03B9F /* ViewController.swift */,
+				AA5158061ECD7F7600A03B9F /* OrderCell.swift */,
+				AA5158081ECD7F8400A03B9F /* OrderDelegate.swift */,
+				AA51580A1ECD7F8F00A03B9F /* OrderDataSource.swift */,
+			);
+			name = OrderTable;
+			sourceTree = "<group>";
+		};
+		AA51580C1ECD80A700A03B9F /* ConfigScreen */ = {
+			isa = PBXGroup;
+			children = (
+				AA9355191EF16C7700DA1876 /* OrderConfigViewController.swift */,
+			);
+			name = ConfigScreen;
+			sourceTree = "<group>";
+		};
+		AA51580E1ECD8FE900A03B9F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AAE5C8CE1ED32DE600D7AFF2 /* User.swift */,
+				AAE5C8D01ED32E4200D7AFF2 /* OrderItem.swift */,
+				AAA524521ED3154600304B1C /* FirebaseRDModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B4B67802E0A321722341C261 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50ADACF0CA94A9F09177F211 /* Pods-OrderGridReciever.debug.xcconfig */,
+				2E6EF3C5BB552E4108214377 /* Pods-OrderGridReciever.release.xcconfig */,
+				F7557A99FDAFF211244DA951 /* Pods-OrderGridRecieverTests.debug.xcconfig */,
+				73E1673319E685F88666E2A4 /* Pods-OrderGridRecieverTests.release.xcconfig */,
+				4A715F1542021CFAA4B5F763 /* Pods-OrderGridRecieverUITests.debug.xcconfig */,
+				88FF7E4F56691159646A1696 /* Pods-OrderGridRecieverUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +223,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA5157FA1ECD77E400A03B9F /* Build configuration list for PBXNativeTarget "OrderGridReciever" */;
 			buildPhases = (
+				AA19820E5AC4CDE2F18D41CB /* [CP] Check Pods Manifest.lock */,
 				AA5157CE1ECD77E400A03B9F /* Sources */,
 				AA5157CF1ECD77E400A03B9F /* Frameworks */,
 				AA5157D01ECD77E400A03B9F /* Resources */,
+				386689615F00BE32A50F002B /* [CP] Embed Pods Frameworks */,
+				9C8BD707413D6FE1CF83CFBC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +243,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA5157FD1ECD77E400A03B9F /* Build configuration list for PBXNativeTarget "OrderGridRecieverTests" */;
 			buildPhases = (
+				8BF144832D809DE2D69A7E17 /* [CP] Check Pods Manifest.lock */,
 				AA5157E21ECD77E400A03B9F /* Sources */,
 				AA5157E31ECD77E400A03B9F /* Frameworks */,
 				AA5157E41ECD77E400A03B9F /* Resources */,
+				00CE4CA4557B557E236023B6 /* [CP] Embed Pods Frameworks */,
+				D020B5B23371EEAE7515E037 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +264,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA5158001ECD77E400A03B9F /* Build configuration list for PBXNativeTarget "OrderGridRecieverUITests" */;
 			buildPhases = (
+				17B0F025AA3042515A5C05CB /* [CP] Check Pods Manifest.lock */,
 				AA5157ED1ECD77E400A03B9F /* Sources */,
 				AA5157EE1ECD77E400A03B9F /* Frameworks */,
 				AA5157EF1ECD77E400A03B9F /* Resources */,
+				C8C935F547802E12FBEA29A6 /* [CP] Embed Pods Frameworks */,
+				58979D1E75CD8E39CAF783BB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +336,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA5157E01ECD77E400A03B9F /* LaunchScreen.storyboard in Resources */,
+				AAA524511ED3138A00304B1C /* GoogleService-Info.plist in Resources */,
+				AA2F4E031EE920660049EE47 /* GoogleService-Info.plist in Resources */,
 				AA5157DD1ECD77E400A03B9F /* Assets.xcassets in Resources */,
 				AA5157DB1ECD77E400A03B9F /* Main.storyboard in Resources */,
 			);
@@ -257,13 +359,158 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00CE4CA4557B557E236023B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrderGridRecieverTests/Pods-OrderGridRecieverTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		17B0F025AA3042515A5C05CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		386689615F00BE32A50F002B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrderGridReciever/Pods-OrderGridReciever-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58979D1E75CD8E39CAF783BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrderGridRecieverUITests/Pods-OrderGridRecieverUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BF144832D809DE2D69A7E17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C8BD707413D6FE1CF83CFBC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrderGridReciever/Pods-OrderGridReciever-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA19820E5AC4CDE2F18D41CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8C935F547802E12FBEA29A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrderGridRecieverUITests/Pods-OrderGridRecieverUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D020B5B23371EEAE7515E037 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrderGridRecieverTests/Pods-OrderGridRecieverTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AA5157CE1ECD77E400A03B9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AA5157D81ECD77E400A03B9F /* ViewController.swift in Sources */,
+				AA93551A1EF16C7700DA1876 /* OrderConfigViewController.swift in Sources */,
+				AA5158091ECD7F8400A03B9F /* OrderDelegate.swift in Sources */,
+				AA51580B1ECD7F8F00A03B9F /* OrderDataSource.swift in Sources */,
+				AA5158071ECD7F7600A03B9F /* OrderCell.swift in Sources */,
+				AAA524531ED3154600304B1C /* FirebaseRDModel.swift in Sources */,
+				AAE5C8D11ED32E4200D7AFF2 /* OrderItem.swift in Sources */,
 				AA5157D61ECD77E400A03B9F /* AppDelegate.swift in Sources */,
+				AAE5C8CF1ED32DE600D7AFF2 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,10 +662,12 @@
 		};
 		AA5157FB1ECD77E400A03B9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50ADACF0CA94A9F09177F211 /* Pods-OrderGridReciever.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5H5DB854MQ;
 				INFOPLIST_FILE = OrderGridReciever/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cpfeiffer.OrderGridReciever;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,10 +677,12 @@
 		};
 		AA5157FC1ECD77E400A03B9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E6EF3C5BB552E4108214377 /* Pods-OrderGridReciever.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5H5DB854MQ;
 				INFOPLIST_FILE = OrderGridReciever/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cpfeiffer.OrderGridReciever;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,6 +692,7 @@
 		};
 		AA5157FE1ECD77E400A03B9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7557A99FDAFF211244DA951 /* Pods-OrderGridRecieverTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +708,7 @@
 		};
 		AA5157FF1ECD77E400A03B9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73E1673319E685F88666E2A4 /* Pods-OrderGridRecieverTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +724,7 @@
 		};
 		AA5158011ECD77E400A03B9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A715F1542021CFAA4B5F763 /* Pods-OrderGridRecieverUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5H5DB854MQ;
@@ -485,6 +739,7 @@
 		};
 		AA5158021ECD77E400A03B9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88FF7E4F56691159646A1696 /* Pods-OrderGridRecieverUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5H5DB854MQ;
@@ -516,6 +771,7 @@
 				AA5157FC1ECD77E400A03B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA5157FD1ECD77E400A03B9F /* Build configuration list for PBXNativeTarget "OrderGridRecieverTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +780,7 @@
 				AA5157FF1ECD77E400A03B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA5158001ECD77E400A03B9F /* Build configuration list for PBXNativeTarget "OrderGridRecieverUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +789,7 @@
 				AA5158021ECD77E400A03B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
