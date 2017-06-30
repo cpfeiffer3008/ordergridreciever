@@ -10,6 +10,8 @@ import UIKit
 
 class OrderDataSource: NSObject,UITableViewDataSource {
     fileprivate let data : FirebaseRDModel
+    fileprivate let myFormatter : EuroFormatter = EuroFormatter()
+
     
     override init() {
         data = FirebaseRDModel()
@@ -22,10 +24,10 @@ class OrderDataSource: NSObject,UITableViewDataSource {
         let entry = data.getElement(from: index)
         
         cell = tableView.dequeueReusableCell(withIdentifier: "OrderCell")! as! OrderCell
-        
-        cell.Tablelabel.text = String(entry.table)
-        cell.Itemlabel.text = entry.name
-        cell.Pricelabel.text = entry.price
+        print("Binding OrderCell")
+        cell.TableLabel.text = String(entry.table)
+        cell.ItemLabel.text = entry.name
+        cell.PriceLabel.text = myFormatter.string(for: entry.price)
         
         
         return cell

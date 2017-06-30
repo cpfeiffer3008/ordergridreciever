@@ -9,13 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var OrderTable: UITableView!
     
     
     var datasource : OrderDataSource!
     var delegate : OrderDelegate!
     var model : FirebaseRDModel!
     
+    @IBOutlet weak var OrderTable: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         OrderTable.dataSource = datasource
         
         model = FirebaseRDModel()
-        model.observeFirebase()
+        model.observeFirebaseOrders()
         print(model.numberofEntries())
         
         let nc = NotificationCenter.default

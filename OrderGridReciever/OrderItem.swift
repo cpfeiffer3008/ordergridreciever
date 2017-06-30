@@ -7,8 +7,6 @@
 //
 
 import UIKit
-
-import Foundation
 import Firebase
 
 struct OrderItem {
@@ -17,9 +15,9 @@ struct OrderItem {
     let name: String
     let table: Int
     let ref: DatabaseReference?
-    var price: String
+    var price: Double
     
-    init(name: String, table: Int, price: String, key: String = "") {
+    init(name: String, table: Int, price: Double, key: String = "") {
         self.key = key
         self.name = name
         self.table = table
@@ -32,7 +30,7 @@ struct OrderItem {
         let snapshotValue = snapshot.value as! [String: AnyObject]
         name = snapshotValue["name"] as! String
         table = snapshotValue["table"] as! Int
-        price = snapshotValue["price"] as! String
+        price = snapshotValue["price"] as! Double
         ref = snapshot.ref
     }
     

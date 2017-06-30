@@ -1,0 +1,6 @@
+framework module Pods_OrderGridRecieverTests {
+  umbrella header "Pods-OrderGridRecieverTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
