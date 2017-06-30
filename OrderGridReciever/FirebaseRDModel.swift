@@ -157,7 +157,7 @@ class FirebaseRDModel {
         return model.RestaurantName
     }
     
-    func calculateToatalPrice() ->Double{
+    func calculateTotalPrice() ->Double{
         var totalPrice : Double = 0
         for OrderItem in model.dataforTable {
             totalPrice = totalPrice + Double(OrderItem.price)

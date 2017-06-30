@@ -11,7 +11,7 @@
 		8F818F6EFEC500FBBDDFDABB /* Pods_OrderGridRecieverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0172B868A077AA2FB8AD5E /* Pods_OrderGridRecieverTests.framework */; };
 		AA141C701F06790200745FBD /* TablePickerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA141C6F1F06790200745FBD /* TablePickerDataSource.swift */; };
 		AA141C721F06791800745FBD /* TablePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA141C711F06791800745FBD /* TablePickerDelegate.swift */; };
-		AA2F4E031EE920660049EE47 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA2F4E021EE920660049EE47 /* GoogleService-Info.plist */; };
+		AA141C741F06BF6100745FBD /* ConfigScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA141C731F06BF6100745FBD /* ConfigScreenViewController.swift */; };
 		AA5157D61ECD77E400A03B9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5157D51ECD77E400A03B9F /* AppDelegate.swift */; };
 		AA5157D81ECD77E400A03B9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5157D71ECD77E400A03B9F /* ViewController.swift */; };
 		AA5157DB1ECD77E400A03B9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5157D91ECD77E400A03B9F /* Main.storyboard */; };
@@ -59,6 +59,7 @@
 		8F0172B868A077AA2FB8AD5E /* Pods_OrderGridRecieverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderGridRecieverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA141C6F1F06790200745FBD /* TablePickerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TablePickerDataSource.swift; sourceTree = "<group>"; };
 		AA141C711F06791800745FBD /* TablePickerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TablePickerDelegate.swift; sourceTree = "<group>"; };
+		AA141C731F06BF6100745FBD /* ConfigScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigScreenViewController.swift; sourceTree = "<group>"; };
 		AA2F4E021EE920660049EE47 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AA5157D21ECD77E400A03B9F /* OrderGridReciever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderGridReciever.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5157D51ECD77E400A03B9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -217,6 +218,7 @@
 		AA51580C1ECD80A700A03B9F /* ConfigScreen */ = {
 			isa = PBXGroup;
 			children = (
+				AA141C731F06BF6100745FBD /* ConfigScreenViewController.swift */,
 			);
 			name = ConfigScreen;
 			sourceTree = "<group>";
@@ -389,7 +391,6 @@
 			files = (
 				AA5157E01ECD77E400A03B9F /* LaunchScreen.storyboard in Resources */,
 				AAA524511ED3138A00304B1C /* GoogleService-Info.plist in Resources */,
-				AA2F4E031EE920660049EE47 /* GoogleService-Info.plist in Resources */,
 				AA5157DD1ECD77E400A03B9F /* Assets.xcassets in Resources */,
 				AA5157DB1ECD77E400A03B9F /* Main.storyboard in Resources */,
 			);
@@ -554,6 +555,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA141C741F06BF6100745FBD /* ConfigScreenViewController.swift in Sources */,
 				AA5157D81ECD77E400A03B9F /* ViewController.swift in Sources */,
 				AA93551A1EF16C7700DA1876 /* OrderConfigViewController.swift in Sources */,
 				AA70E8A21F06626100600960 /* EuroFormatter.swift in Sources */,
