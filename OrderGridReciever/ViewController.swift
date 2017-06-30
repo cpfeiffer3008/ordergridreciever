@@ -29,13 +29,15 @@ class ViewController: UIViewController {
         OrderTable.dataSource = datasource
         
         model = FirebaseRDModel()
-        model.observeFirebaseOrders()
         print(model.numberofEntries())
         
         let nc = NotificationCenter.default
         
         nc.addObserver(self, selector: #selector(reloadOrderTable), name: Notification.Name("firereload"), object: nil)
-
+        
+        model.observeFirebaseOrders()
+        model.observeFirebaseRestaurant()
+        
 
     }
     

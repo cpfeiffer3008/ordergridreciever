@@ -1,11 +1,34 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pR4-4L-qJR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--OrderGrid Reciever-->
+        <scene sceneID="UkX-8g-aqf">
+            <objects>
+                <viewController id="0pJ-rx-L37" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Rn-4F-esg"/>
+                        <viewControllerLayoutGuide type="bottom" id="7it-QZ-uNS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JAS-L4-y3p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="OrderGrid Reciever" id="N7P-tc-IFj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nUj-Q2-SQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2868" y="-387.25637181409297"/>
+        </scene>
+        <!--OrderGrid Reciever-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
@@ -18,10 +41,75 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Mein Lokal" image="Einstellungen" id="3Jc-iq-Uag"/>
+                    <navigationItem key="navigationItem" title="OrderGrid Reciever" id="jAE-2K-QKG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="1930.4000000000001" y="374.66266866566718"/>
+        </scene>
+        <!--Meine Speisekarte-->
+        <scene sceneID="IlU-Mv-Yxp">
+            <objects>
+                <viewController id="lrX-uY-X6K" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KxA-f0-llx"/>
+                        <viewControllerLayoutGuide type="bottom" id="tpy-mJ-agk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xLh-sH-XUK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Meine Speisekarte" image="Dinner" id="dZq-EO-yJv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DCB-O3-cuv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1929" y="1128"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="O1q-5u-rb2">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="pR4-4L-qJR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="ZKQ-cA-foD"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="uv8-VC-c5A">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ltr-Sn-5lA" kind="relationship" relationship="viewControllers" id="Tk4-dA-skD"/>
+                        <segue destination="01J-lp-oVM" kind="relationship" relationship="viewControllers" id="8FL-ZG-inE"/>
+                        <segue destination="lrX-uY-X6K" kind="relationship" relationship="viewControllers" id="5NP-hc-9If"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VJE-Xg-UBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991.20000000000005" y="374.66266866566718"/>
+        </scene>
+        <!--Bestellungen-->
+        <scene sceneID="iKU-8g-Ozl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ltr-Sn-5lA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Bestellungen" image="Liste" id="P1F-KR-bNy"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JSl-RB-JmV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0pJ-rx-L37" kind="relationship" relationship="rootViewController" id="oHf-xt-KiX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cHp-WF-clq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1928.8" y="-387.25637181409297"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Dinner" width="25" height="25"/>
+        <image name="Einstellungen" width="25" height="25"/>
+        <image name="Liste" width="25" height="25"/>
+    </resources>
 </document>

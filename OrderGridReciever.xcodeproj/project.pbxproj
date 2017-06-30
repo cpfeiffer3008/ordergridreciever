@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5D8A9436E8FD016AA88350F8 /* Pods_OrderGridRecieverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6C7CD4E2BF38E8D37E1685 /* Pods_OrderGridRecieverUITests.framework */; };
 		8F818F6EFEC500FBBDDFDABB /* Pods_OrderGridRecieverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0172B868A077AA2FB8AD5E /* Pods_OrderGridRecieverTests.framework */; };
+		AA141C701F06790200745FBD /* TablePickerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA141C6F1F06790200745FBD /* TablePickerDataSource.swift */; };
+		AA141C721F06791800745FBD /* TablePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA141C711F06791800745FBD /* TablePickerDelegate.swift */; };
 		AA2F4E031EE920660049EE47 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA2F4E021EE920660049EE47 /* GoogleService-Info.plist */; };
 		AA5157D61ECD77E400A03B9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5157D51ECD77E400A03B9F /* AppDelegate.swift */; };
 		AA5157D81ECD77E400A03B9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5157D71ECD77E400A03B9F /* ViewController.swift */; };
@@ -55,6 +57,8 @@
 		7B6C7CD4E2BF38E8D37E1685 /* Pods_OrderGridRecieverUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderGridRecieverUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FF7E4F56691159646A1696 /* Pods-OrderGridRecieverUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderGridRecieverUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrderGridRecieverUITests/Pods-OrderGridRecieverUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8F0172B868A077AA2FB8AD5E /* Pods_OrderGridRecieverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderGridRecieverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA141C6F1F06790200745FBD /* TablePickerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TablePickerDataSource.swift; sourceTree = "<group>"; };
+		AA141C711F06791800745FBD /* TablePickerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TablePickerDelegate.swift; sourceTree = "<group>"; };
 		AA2F4E021EE920660049EE47 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AA5157D21ECD77E400A03B9F /* OrderGridReciever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderGridReciever.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5157D51ECD77E400A03B9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +125,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AA141C6D1F06787300745FBD /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				AA141C6E1F0678CB00745FBD /* TablePicker */,
+				AA5157D71ECD77E400A03B9F /* ViewController.swift */,
+				AA9355191EF16C7700DA1876 /* OrderConfigViewController.swift */,
+				AA5158031ECD7F4400A03B9F /* OrderTable */,
+				AA51580E1ECD8FE900A03B9F /* Model */,
+			);
+			name = Orders;
+			sourceTree = "<group>";
+		};
+		AA141C6E1F0678CB00745FBD /* TablePicker */ = {
+			isa = PBXGroup;
+			children = (
+				AA141C6F1F06790200745FBD /* TablePickerDataSource.swift */,
+				AA141C711F06791800745FBD /* TablePickerDelegate.swift */,
+			);
+			name = TablePicker;
+			sourceTree = "<group>";
+		};
 		AA5157C91ECD77E400A03B9F = {
 			isa = PBXGroup;
 			children = (
@@ -146,10 +171,9 @@
 		AA5157D41ECD77E400A03B9F /* OrderGridReciever */ = {
 			isa = PBXGroup;
 			children = (
+				AA141C6D1F06787300745FBD /* Orders */,
 				AA70E89B1F065EA000600960 /* Menu */,
-				AA51580E1ECD8FE900A03B9F /* Model */,
 				AA51580C1ECD80A700A03B9F /* ConfigScreen */,
-				AA5158031ECD7F4400A03B9F /* OrderTable */,
 				AA5157D51ECD77E400A03B9F /* AppDelegate.swift */,
 				AA2F4E021EE920660049EE47 /* GoogleService-Info.plist */,
 				AA5157D91ECD77E400A03B9F /* Main.storyboard */,
@@ -183,7 +207,6 @@
 		AA5158031ECD7F4400A03B9F /* OrderTable */ = {
 			isa = PBXGroup;
 			children = (
-				AA5157D71ECD77E400A03B9F /* ViewController.swift */,
 				AA5158061ECD7F7600A03B9F /* OrderCell.swift */,
 				AA5158081ECD7F8400A03B9F /* OrderDelegate.swift */,
 				AA51580A1ECD7F8F00A03B9F /* OrderDataSource.swift */,
@@ -194,7 +217,6 @@
 		AA51580C1ECD80A700A03B9F /* ConfigScreen */ = {
 			isa = PBXGroup;
 			children = (
-				AA9355191EF16C7700DA1876 /* OrderConfigViewController.swift */,
 			);
 			name = ConfigScreen;
 			sourceTree = "<group>";
@@ -535,6 +557,7 @@
 				AA5157D81ECD77E400A03B9F /* ViewController.swift in Sources */,
 				AA93551A1EF16C7700DA1876 /* OrderConfigViewController.swift in Sources */,
 				AA70E8A21F06626100600960 /* EuroFormatter.swift in Sources */,
+				AA141C701F06790200745FBD /* TablePickerDataSource.swift in Sources */,
 				AA5158091ECD7F8400A03B9F /* OrderDelegate.swift in Sources */,
 				AA51580B1ECD7F8F00A03B9F /* OrderDataSource.swift in Sources */,
 				AA5158071ECD7F7600A03B9F /* OrderCell.swift in Sources */,
@@ -543,6 +566,7 @@
 				AAE5C8D11ED32E4200D7AFF2 /* OrderItem.swift in Sources */,
 				AA5157D61ECD77E400A03B9F /* AppDelegate.swift in Sources */,
 				AA70E8A01F065F1400600960 /* FirebaseMenuModel.swift in Sources */,
+				AA141C721F06791800745FBD /* TablePickerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
