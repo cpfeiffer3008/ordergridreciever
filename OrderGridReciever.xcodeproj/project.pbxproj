@@ -22,6 +22,11 @@
 		AA5158071ECD7F7600A03B9F /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5158061ECD7F7600A03B9F /* OrderCell.swift */; };
 		AA5158091ECD7F8400A03B9F /* OrderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5158081ECD7F8400A03B9F /* OrderDelegate.swift */; };
 		AA51580B1ECD7F8F00A03B9F /* OrderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA51580A1ECD7F8F00A03B9F /* OrderDataSource.swift */; };
+		AA581BD31F0787D400A219A0 /* MenuEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA581BD21F0787D400A219A0 /* MenuEditViewController.swift */; };
+		AA581BD51F078BA100A219A0 /* NewMenuItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA581BD41F078BA100A219A0 /* NewMenuItemViewController.swift */; };
+		AA581BD91F078F1800A219A0 /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA581BD81F078F1800A219A0 /* MenuItemTableViewCell.swift */; };
+		AA581BDB1F078FEB00A219A0 /* MenuTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA581BDA1F078FEB00A219A0 /* MenuTableDataSource.swift */; };
+		AA581BDE1F07901600A219A0 /* MenuTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA581BDD1F07901600A219A0 /* MenuTableDelegate.swift */; };
 		AA70E89E1F065EE500600960 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70E89D1F065EE500600960 /* MenuItem.swift */; };
 		AA70E8A01F065F1400600960 /* FirebaseMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70E89F1F065F1400600960 /* FirebaseMenuModel.swift */; };
 		AA70E8A21F06626100600960 /* EuroFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70E8A11F06626100600960 /* EuroFormatter.swift */; };
@@ -77,6 +82,11 @@
 		AA5158061ECD7F7600A03B9F /* OrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
 		AA5158081ECD7F8400A03B9F /* OrderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDelegate.swift; sourceTree = "<group>"; };
 		AA51580A1ECD7F8F00A03B9F /* OrderDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDataSource.swift; sourceTree = "<group>"; };
+		AA581BD21F0787D400A219A0 /* MenuEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuEditViewController.swift; sourceTree = "<group>"; };
+		AA581BD41F078BA100A219A0 /* NewMenuItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMenuItemViewController.swift; sourceTree = "<group>"; };
+		AA581BD81F078F1800A219A0 /* MenuItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemTableViewCell.swift; sourceTree = "<group>"; };
+		AA581BDA1F078FEB00A219A0 /* MenuTableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableDataSource.swift; sourceTree = "<group>"; };
+		AA581BDD1F07901600A219A0 /* MenuTableDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableDelegate.swift; sourceTree = "<group>"; };
 		AA70E89D1F065EE500600960 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		AA70E89F1F065F1400600960 /* FirebaseMenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseMenuModel.swift; sourceTree = "<group>"; };
 		AA70E8A11F06626100600960 /* EuroFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EuroFormatter.swift; sourceTree = "<group>"; };
@@ -232,9 +242,21 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		AA581BD61F078E8B00A219A0 /* NewMenuItemScreen */ = {
+			isa = PBXGroup;
+			children = (
+				AA581BD41F078BA100A219A0 /* NewMenuItemViewController.swift */,
+			);
+			name = NewMenuItemScreen;
+			sourceTree = "<group>";
+		};
 		AA70E89A1F065E9000600960 /* MenuEditView */ = {
 			isa = PBXGroup;
 			children = (
+				AA581BD21F0787D400A219A0 /* MenuEditViewController.swift */,
+				AA581BD81F078F1800A219A0 /* MenuItemTableViewCell.swift */,
+				AA581BDA1F078FEB00A219A0 /* MenuTableDataSource.swift */,
+				AA581BDD1F07901600A219A0 /* MenuTableDelegate.swift */,
 			);
 			name = MenuEditView;
 			sourceTree = "<group>";
@@ -242,6 +264,7 @@
 		AA70E89B1F065EA000600960 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				AA581BD61F078E8B00A219A0 /* NewMenuItemScreen */,
 				AA70E89C1F065EB300600960 /* Model */,
 				AA70E89A1F065E9000600960 /* MenuEditView */,
 			);
@@ -559,13 +582,18 @@
 				AA5157D81ECD77E400A03B9F /* ViewController.swift in Sources */,
 				AA93551A1EF16C7700DA1876 /* OrderConfigViewController.swift in Sources */,
 				AA70E8A21F06626100600960 /* EuroFormatter.swift in Sources */,
+				AA581BD31F0787D400A219A0 /* MenuEditViewController.swift in Sources */,
 				AA141C701F06790200745FBD /* TablePickerDataSource.swift in Sources */,
+				AA581BDB1F078FEB00A219A0 /* MenuTableDataSource.swift in Sources */,
 				AA5158091ECD7F8400A03B9F /* OrderDelegate.swift in Sources */,
+				AA581BD51F078BA100A219A0 /* NewMenuItemViewController.swift in Sources */,
 				AA51580B1ECD7F8F00A03B9F /* OrderDataSource.swift in Sources */,
 				AA5158071ECD7F7600A03B9F /* OrderCell.swift in Sources */,
 				AAA524531ED3154600304B1C /* FirebaseRDModel.swift in Sources */,
 				AA70E89E1F065EE500600960 /* MenuItem.swift in Sources */,
 				AAE5C8D11ED32E4200D7AFF2 /* OrderItem.swift in Sources */,
+				AA581BDE1F07901600A219A0 /* MenuTableDelegate.swift in Sources */,
+				AA581BD91F078F1800A219A0 /* MenuItemTableViewCell.swift in Sources */,
 				AA5157D61ECD77E400A03B9F /* AppDelegate.swift in Sources */,
 				AA70E8A01F065F1400600960 /* FirebaseMenuModel.swift in Sources */,
 				AA141C721F06791800745FBD /* TablePickerDelegate.swift in Sources */,
