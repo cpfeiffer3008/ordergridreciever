@@ -9,6 +9,7 @@
 import UIKit
 
 class MenuEditViewController: UIViewController {
+    @IBOutlet weak var MenuTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()

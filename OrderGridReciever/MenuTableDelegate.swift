@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MenuTableDelegate: UITableViewDelegate {
+class MenuTableDelegate: NSObject, UITableViewDelegate {
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -9,6 +9,8 @@
 import UIKit
 
 class MenuItemTableViewCell: UITableViewCell {
+    @IBOutlet weak var PriceLabel: UILabel!
+    @IBOutlet weak var NameLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

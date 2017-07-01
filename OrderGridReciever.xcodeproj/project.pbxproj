@@ -27,6 +27,8 @@
 		AA581BD91F078F1800A219A0 /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA581BD81F078F1800A219A0 /* MenuItemTableViewCell.swift */; };
 		AA581BDB1F078FEB00A219A0 /* MenuTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA581BDA1F078FEB00A219A0 /* MenuTableDataSource.swift */; };
 		AA581BDE1F07901600A219A0 /* MenuTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA581BDD1F07901600A219A0 /* MenuTableDelegate.swift */; };
+		AA581BE01F07C6E300A219A0 /* ImagePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA581BDF1F07C6E300A219A0 /* ImagePickerDelegate.swift */; };
+		AA581BE21F07E2AC00A219A0 /* FirebaseMenuPushController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA581BE11F07E2AC00A219A0 /* FirebaseMenuPushController.swift */; };
 		AA70E89E1F065EE500600960 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70E89D1F065EE500600960 /* MenuItem.swift */; };
 		AA70E8A01F065F1400600960 /* FirebaseMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70E89F1F065F1400600960 /* FirebaseMenuModel.swift */; };
 		AA70E8A21F06626100600960 /* EuroFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70E8A11F06626100600960 /* EuroFormatter.swift */; };
@@ -87,6 +89,8 @@
 		AA581BD81F078F1800A219A0 /* MenuItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemTableViewCell.swift; sourceTree = "<group>"; };
 		AA581BDA1F078FEB00A219A0 /* MenuTableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableDataSource.swift; sourceTree = "<group>"; };
 		AA581BDD1F07901600A219A0 /* MenuTableDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableDelegate.swift; sourceTree = "<group>"; };
+		AA581BDF1F07C6E300A219A0 /* ImagePickerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerDelegate.swift; sourceTree = "<group>"; };
+		AA581BE11F07E2AC00A219A0 /* FirebaseMenuPushController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseMenuPushController.swift; sourceTree = "<group>"; };
 		AA70E89D1F065EE500600960 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		AA70E89F1F065F1400600960 /* FirebaseMenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseMenuModel.swift; sourceTree = "<group>"; };
 		AA70E8A11F06626100600960 /* EuroFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EuroFormatter.swift; sourceTree = "<group>"; };
@@ -246,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				AA581BD41F078BA100A219A0 /* NewMenuItemViewController.swift */,
+				AA581BDF1F07C6E300A219A0 /* ImagePickerDelegate.swift */,
 			);
 			name = NewMenuItemScreen;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 				AA581BD61F078E8B00A219A0 /* NewMenuItemScreen */,
 				AA70E89C1F065EB300600960 /* Model */,
 				AA70E89A1F065E9000600960 /* MenuEditView */,
+				AA581BE11F07E2AC00A219A0 /* FirebaseMenuPushController.swift */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -582,6 +588,7 @@
 				AA5157D81ECD77E400A03B9F /* ViewController.swift in Sources */,
 				AA93551A1EF16C7700DA1876 /* OrderConfigViewController.swift in Sources */,
 				AA70E8A21F06626100600960 /* EuroFormatter.swift in Sources */,
+				AA581BE01F07C6E300A219A0 /* ImagePickerDelegate.swift in Sources */,
 				AA581BD31F0787D400A219A0 /* MenuEditViewController.swift in Sources */,
 				AA141C701F06790200745FBD /* TablePickerDataSource.swift in Sources */,
 				AA581BDB1F078FEB00A219A0 /* MenuTableDataSource.swift in Sources */,
@@ -592,6 +599,7 @@
 				AAA524531ED3154600304B1C /* FirebaseRDModel.swift in Sources */,
 				AA70E89E1F065EE500600960 /* MenuItem.swift in Sources */,
 				AAE5C8D11ED32E4200D7AFF2 /* OrderItem.swift in Sources */,
+				AA581BE21F07E2AC00A219A0 /* FirebaseMenuPushController.swift in Sources */,
 				AA581BDE1F07901600A219A0 /* MenuTableDelegate.swift in Sources */,
 				AA581BD91F078F1800A219A0 /* MenuItemTableViewCell.swift in Sources */,
 				AA5157D61ECD77E400A03B9F /* AppDelegate.swift in Sources */,
