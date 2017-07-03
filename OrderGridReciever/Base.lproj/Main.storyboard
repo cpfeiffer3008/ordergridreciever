@@ -70,7 +70,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4,50 €" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhZ-WF-3UC">
-                                                    <rect key="frame" x="306.5" y="11" width="60.5" height="20"/>
+                                                    <rect key="frame" x="660.5" y="11" width="60.5" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="c9o-qj-fZZ"/>
                                                     </constraints>
@@ -88,7 +88,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goassmass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGB-z9-Aor">
-                                                    <rect key="frame" x="135.5" y="11" width="104" height="20"/>
+                                                    <rect key="frame" x="312.5" y="11" width="104" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="1Bg-Xl-ErQ"/>
                                                     </constraints>
@@ -304,11 +304,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qu-By-mog">
-                                <rect key="frame" x="306.5" y="349" width="155" height="30"/>
+                                <rect key="frame" x="330.5" y="349" width="107" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ojb-yc-yXr"/>
                                 </constraints>
-                                <state key="normal" title="Foto aufnehmen/laden"/>
+                                <state key="normal" title="Bild hinzufügen"/>
                                 <connections>
                                     <action selector="TakeNewImageAction:" destination="jH5-BL-sg5" eventType="touchUpInside" id="yQO-d7-BFA"/>
                                 </connections>
