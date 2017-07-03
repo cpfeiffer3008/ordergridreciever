@@ -27,7 +27,6 @@
 		AA581BD91F078F1800A219A0 /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA581BD81F078F1800A219A0 /* MenuItemTableViewCell.swift */; };
 		AA581BDB1F078FEB00A219A0 /* MenuTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA581BDA1F078FEB00A219A0 /* MenuTableDataSource.swift */; };
 		AA581BDE1F07901600A219A0 /* MenuTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA581BDD1F07901600A219A0 /* MenuTableDelegate.swift */; };
-		AA581BE01F07C6E300A219A0 /* ImagePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA581BDF1F07C6E300A219A0 /* ImagePickerDelegate.swift */; };
 		AA581BE21F07E2AC00A219A0 /* FirebaseMenuPushController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA581BE11F07E2AC00A219A0 /* FirebaseMenuPushController.swift */; };
 		AA70E89E1F065EE500600960 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70E89D1F065EE500600960 /* MenuItem.swift */; };
 		AA70E8A01F065F1400600960 /* FirebaseMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70E89F1F065F1400600960 /* FirebaseMenuModel.swift */; };
@@ -35,6 +34,7 @@
 		AA93551A1EF16C7700DA1876 /* OrderConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9355191EF16C7700DA1876 /* OrderConfigViewController.swift */; };
 		AAA524511ED3138A00304B1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAA524501ED3138A00304B1C /* GoogleService-Info.plist */; };
 		AAA524531ED3154600304B1C /* FirebaseRDModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA524521ED3154600304B1C /* FirebaseRDModel.swift */; };
+		AAAAF3301F0A582000C1FF74 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAF32F1F0A582000C1FF74 /* ProgressView.swift */; };
 		AAE5C8D11ED32E4200D7AFF2 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE5C8D01ED32E4200D7AFF2 /* OrderItem.swift */; };
 		EB2475EB8E7CB3393D56BFC7 /* Pods_OrderGridReciever.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C28277C6E3F918F7952CE3 /* Pods_OrderGridReciever.framework */; };
 /* End PBXBuildFile section */
@@ -89,7 +89,6 @@
 		AA581BD81F078F1800A219A0 /* MenuItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemTableViewCell.swift; sourceTree = "<group>"; };
 		AA581BDA1F078FEB00A219A0 /* MenuTableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableDataSource.swift; sourceTree = "<group>"; };
 		AA581BDD1F07901600A219A0 /* MenuTableDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableDelegate.swift; sourceTree = "<group>"; };
-		AA581BDF1F07C6E300A219A0 /* ImagePickerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerDelegate.swift; sourceTree = "<group>"; };
 		AA581BE11F07E2AC00A219A0 /* FirebaseMenuPushController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseMenuPushController.swift; sourceTree = "<group>"; };
 		AA70E89D1F065EE500600960 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		AA70E89F1F065F1400600960 /* FirebaseMenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseMenuModel.swift; sourceTree = "<group>"; };
@@ -97,6 +96,7 @@
 		AA9355191EF16C7700DA1876 /* OrderConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderConfigViewController.swift; sourceTree = "<group>"; };
 		AAA524501ED3138A00304B1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AAA524521ED3154600304B1C /* FirebaseRDModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseRDModel.swift; sourceTree = "<group>"; };
+		AAAAF32F1F0A582000C1FF74 /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		AAE5C8D01ED32E4200D7AFF2 /* OrderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
 		F6C28277C6E3F918F7952CE3 /* Pods_OrderGridReciever.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderGridReciever.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7557A99FDAFF211244DA951 /* Pods-OrderGridRecieverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderGridRecieverTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrderGridRecieverTests/Pods-OrderGridRecieverTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -250,7 +250,6 @@
 			isa = PBXGroup;
 			children = (
 				AA581BD41F078BA100A219A0 /* NewMenuItemViewController.swift */,
-				AA581BDF1F07C6E300A219A0 /* ImagePickerDelegate.swift */,
 			);
 			name = NewMenuItemScreen;
 			sourceTree = "<group>";
@@ -273,6 +272,7 @@
 				AA70E89C1F065EB300600960 /* Model */,
 				AA70E89A1F065E9000600960 /* MenuEditView */,
 				AA581BE11F07E2AC00A219A0 /* FirebaseMenuPushController.swift */,
+				AAAAF32F1F0A582000C1FF74 /* ProgressView.swift */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -588,7 +588,6 @@
 				AA5157D81ECD77E400A03B9F /* ViewController.swift in Sources */,
 				AA93551A1EF16C7700DA1876 /* OrderConfigViewController.swift in Sources */,
 				AA70E8A21F06626100600960 /* EuroFormatter.swift in Sources */,
-				AA581BE01F07C6E300A219A0 /* ImagePickerDelegate.swift in Sources */,
 				AA581BD31F0787D400A219A0 /* MenuEditViewController.swift in Sources */,
 				AA141C701F06790200745FBD /* TablePickerDataSource.swift in Sources */,
 				AA581BDB1F078FEB00A219A0 /* MenuTableDataSource.swift in Sources */,
@@ -605,6 +604,7 @@
 				AA5157D61ECD77E400A03B9F /* AppDelegate.swift in Sources */,
 				AA70E8A01F065F1400600960 /* FirebaseMenuModel.swift in Sources */,
 				AA141C721F06791800745FBD /* TablePickerDelegate.swift in Sources */,
+				AAAAF3301F0A582000C1FF74 /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

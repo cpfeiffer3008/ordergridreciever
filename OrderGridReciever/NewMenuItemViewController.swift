@@ -14,6 +14,9 @@ class NewMenuItemViewController: UIViewController, UIImagePickerControllerDelega
     @IBOutlet weak var NameTextField: UITextField!
     @IBOutlet weak var PriceTextField: UITextField!
     
+    
+    
+    
     let MyFormatter : EuroFormatter = EuroFormatter()
     let storageRef = Storage.storage().reference(withPath: "Itempictures")
     let ref = Database.database().reference(withPath: "menue")
@@ -22,6 +25,7 @@ class NewMenuItemViewController: UIViewController, UIImagePickerControllerDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
@@ -33,6 +37,11 @@ class NewMenuItemViewController: UIViewController, UIImagePickerControllerDelega
     
     @IBAction func CreateMenuItemAction(_ sender: Any) {
         let MyItemRef : DatabaseReference = ref.childByAutoId()
+        
+        
+        
+        let progressView = ProgressView(text: "Speisekarteneintrag hochladen")
+        self.view.addSubview(progressView)
         
     }
     
