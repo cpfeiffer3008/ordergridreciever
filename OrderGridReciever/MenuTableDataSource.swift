@@ -10,11 +10,19 @@ import UIKit
 
 class MenuTableDataSource: NSObject, UITableViewDataSource {
     
+    let MenuModel : FirebaseMenueModel = FirebaseMenueModel()
+    let MyFormatter : EuroFormatter = EuroFormatter()
+    
+    
     @available(iOS 2.0, *)
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = OrderCell()
+        var cell = MenuItemTableViewCell()
+        let index = indexPath.row
+        let entry = MenuModel.getElement(from: index)
         
-        
+        cell = tableView.dequeueReusableCell(withIdentifier: "MenuCell")! as! MenuItemTableViewCell
+        cell.NameLabel.text = String(entry.name)
+        cell.PriceLabel.text = MyFormatter.string(for: entry.price)
         
         return cell
     }
@@ -22,14 +30,13 @@ class MenuTableDataSource: NSObject, UITableViewDataSource {
     
     @available(iOS 2.0, *)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return data.numberofEntries()
-        return 1
+        return MenuModel.numberofEntries()
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-//        if editingStyle == .delete {
-//            let orderItem = data.getElement(from: indexPath.row)
-//            orderItem.ref?.removeValue()
-//        }
+        if editingStyle == .delete {
+            let menuItem = MenuModel.getElement(from: indexPath.row)
+            menuItem.ref?.removeValue()
+        }
     }
 }

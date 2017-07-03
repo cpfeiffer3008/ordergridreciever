@@ -10,9 +10,23 @@ import UIKit
 
 class MenuEditViewController: UIViewController {
     @IBOutlet weak var MenuTableView: UITableView!
+    let MenuModel : FirebaseMenueModel = FirebaseMenueModel()
+    
+    var TableDataSource : UITableViewDataSource!
+    var TableDelegate : UITableViewDelegate!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        TableDataSource = MenuTableDataSource()
+        TableDelegate = MenuTableDelegate()
+    
+        MenuTableView.dataSource = TableDataSource
+        MenuTableView.delegate = TableDelegate
+        
+        MenuModel.observeFirebaseMenue()
+        let nc = NotificationCenter.default
+        nc.addObserver(self, selector: #selector(reloadTable), name: Notification.Name("fireReloadEditTable"), object: nil)
 
         // Do any additional setup after loading the view.
     }
@@ -20,6 +34,11 @@ class MenuEditViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func reloadTable(){
+        print ("MenuTable was told to reload!")
+        MenuTableView.reloadData()
     }
     
 

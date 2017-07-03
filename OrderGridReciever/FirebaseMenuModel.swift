@@ -68,13 +68,18 @@ class FirebaseMenueModel: NSObject {
             }
             self.model.data = newItems
             print("New Number of Entries is: \(self.model.data.count)")
-            self.notifyCollectionToReload()
+            self.notifyEditTableToReload()
         })
     }
     
     func notifyCollectionToReload(){
         let nc = NotificationCenter.default
         nc.post(name: Notification.Name("fireReloadCollection"), object: nil)
+    }
+    
+    func notifyEditTableToReload(){
+        let nc = NotificationCenter.default
+        nc.post(name: Notification.Name("fireReloadEditTable"), object: nil)
     }
     
 }
