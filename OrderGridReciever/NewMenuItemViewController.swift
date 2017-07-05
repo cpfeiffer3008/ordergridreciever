@@ -105,6 +105,7 @@ class NewMenuItemViewController: UIViewController, UIImagePickerControllerDelega
     }
     
     func uploadfail(){
+        progressView.hide()
         let alertSheetController = UIAlertController(title: "Fehler bei Upload", message: "Bei dem Upload ist ein Fehler aufgetreten, bitte versuchen sie es erneut",preferredStyle: .alert)
         
         let enterAction = UIAlertAction(title: "Ok", style: .default) { action -> Void in}
