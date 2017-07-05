@@ -15,8 +15,7 @@ class NewMenuItemViewController: UIViewController, UIImagePickerControllerDelega
     @IBOutlet weak var PriceTextField: UITextField!
     
     
-    
-    
+    let FIRPushController = FirebaseMenuPushController()
     let MyFormatter : EuroFormatter = EuroFormatter()
     let storageRef = Storage.storage().reference(withPath: "Itempictures")
     let ref = Database.database().reference(withPath: "menue")
@@ -36,8 +35,9 @@ class NewMenuItemViewController: UIViewController, UIImagePickerControllerDelega
     }
     
     @IBAction func CreateMenuItemAction(_ sender: Any) {
-        let MyItemRef : DatabaseReference = ref.childByAutoId()
+//        Textfield error handling
         
+        FIRPushController.pushNewMenuItemtoFirebase(name: NameTextField.text!, price: Double(PriceTextField.text!)!, image: MyImage!)
         
         
         let progressView = ProgressView(text: "Speisekarteneintrag hochladen")
@@ -79,6 +79,19 @@ class NewMenuItemViewController: UIViewController, UIImagePickerControllerDelega
 
         }
     }
+    
+    func showinvalidPriceErrorDialg(){
+    
+    }
+    
+    func showinvalidNameErrorDialg(){
+        
+    }
+
+    func showinvalidImageErrorDialg(){
+        
+    }
+
     
     func openCamera(){
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera){

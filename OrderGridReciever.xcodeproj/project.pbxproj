@@ -35,6 +35,7 @@
 		AAA524511ED3138A00304B1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAA524501ED3138A00304B1C /* GoogleService-Info.plist */; };
 		AAA524531ED3154600304B1C /* FirebaseRDModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA524521ED3154600304B1C /* FirebaseRDModel.swift */; };
 		AAAAF3301F0A582000C1FF74 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAF32F1F0A582000C1FF74 /* ProgressView.swift */; };
+		AAD094AB1F0CE6C4009B8742 /* MenuItemPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD094AA1F0CE6C4009B8742 /* MenuItemPush.swift */; };
 		AAE5C8D11ED32E4200D7AFF2 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE5C8D01ED32E4200D7AFF2 /* OrderItem.swift */; };
 		EB2475EB8E7CB3393D56BFC7 /* Pods_OrderGridReciever.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C28277C6E3F918F7952CE3 /* Pods_OrderGridReciever.framework */; };
 /* End PBXBuildFile section */
@@ -97,6 +98,7 @@
 		AAA524501ED3138A00304B1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AAA524521ED3154600304B1C /* FirebaseRDModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseRDModel.swift; sourceTree = "<group>"; };
 		AAAAF32F1F0A582000C1FF74 /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		AAD094AA1F0CE6C4009B8742 /* MenuItemPush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemPush.swift; sourceTree = "<group>"; };
 		AAE5C8D01ED32E4200D7AFF2 /* OrderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
 		F6C28277C6E3F918F7952CE3 /* Pods_OrderGridReciever.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderGridReciever.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7557A99FDAFF211244DA951 /* Pods-OrderGridRecieverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderGridRecieverTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrderGridRecieverTests/Pods-OrderGridRecieverTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -282,6 +284,7 @@
 			children = (
 				AA70E89D1F065EE500600960 /* MenuItem.swift */,
 				AA70E89F1F065F1400600960 /* FirebaseMenuModel.swift */,
+				AAD094AA1F0CE6C4009B8742 /* MenuItemPush.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -589,6 +592,7 @@
 				AA93551A1EF16C7700DA1876 /* OrderConfigViewController.swift in Sources */,
 				AA70E8A21F06626100600960 /* EuroFormatter.swift in Sources */,
 				AA581BD31F0787D400A219A0 /* MenuEditViewController.swift in Sources */,
+				AAD094AB1F0CE6C4009B8742 /* MenuItemPush.swift in Sources */,
 				AA141C701F06790200745FBD /* TablePickerDataSource.swift in Sources */,
 				AA581BDB1F078FEB00A219A0 /* MenuTableDataSource.swift in Sources */,
 				AA5158091ECD7F8400A03B9F /* OrderDelegate.swift in Sources */,

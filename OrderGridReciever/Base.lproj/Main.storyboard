@@ -70,7 +70,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4,50 €" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhZ-WF-3UC">
-                                                    <rect key="frame" x="660.5" y="11" width="60.5" height="20"/>
+                                                    <rect key="frame" x="916.5" y="11" width="60.5" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="c9o-qj-fZZ"/>
                                                     </constraints>
@@ -88,7 +88,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goassmass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGB-z9-Aor">
-                                                    <rect key="frame" x="312.5" y="11" width="104" height="20"/>
+                                                    <rect key="frame" x="440.5" y="11" width="104" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="1Bg-Xl-ErQ"/>
                                                     </constraints>
@@ -610,7 +610,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4,50€" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zur-by-4ZI">
-                                                    <rect key="frame" x="684.5" y="11" width="60.5" height="21"/>
+                                                    <rect key="frame" x="940.5" y="11" width="60.5" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="snz-h5-NLz"/>
                                                     </constraints>
