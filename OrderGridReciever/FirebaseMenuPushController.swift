@@ -12,6 +12,7 @@ import Firebase
 class FirebaseMenuPushController: NSObject {
     let databaseref = Database.database().reference(withPath: "menue")
     let storageref = Storage.storage().reference(withPath: "Itempictures")
+    let nc = NotificationCenter.default
     
     func pushNewMenuItemtoFirebase (name : String, price: Double, image: UIImage){
         let generatedStorageID = generateNewStorageItemID().uuidString
@@ -25,12 +26,16 @@ class FirebaseMenuPushController: NSObject {
         self.storageref.child(filePath).putData(data as Data, metadata: metaData){(metaData,error) in
             if let error = error {
                 print(error.localizedDescription)
+                self.nc.post(name: Notification.Name("firemenuuploadfail"), object: nil)
+                
                 return
             }else{
 //                Upload erfolgreich Eintrag in der Datenbank hinzufügen
                 let mymenuitem = MenueItemPush(name: name, price: price, imageRef: myStorageIDforDataBase)
                 let itemref = self.databaseref.childByAutoId()
                 itemref.setValue(mymenuitem.toAnyObject())
+//                Notification an den VC schicken
+                self.nc.post(name: Notification.Name("firemenuuploadsucessful"), object: nil)
             }
         }
     }

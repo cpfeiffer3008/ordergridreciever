@@ -21,9 +21,13 @@ class NewMenuItemViewController: UIViewController, UIImagePickerControllerDelega
     let ref = Database.database().reference(withPath: "menue")
     
     var MyImage : UIImage?
+    let progressView = ProgressView(text: "Speisekarteneintrag hochladen")
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let nc = NotificationCenter.default
+        nc.addObserver(self, selector: #selector(uploadFinished), name: Notification.Name("firemenuuploadsucessful"), object: nil)
         
 
         // Do any additional setup after loading the view.
@@ -37,11 +41,29 @@ class NewMenuItemViewController: UIViewController, UIImagePickerControllerDelega
     @IBAction func CreateMenuItemAction(_ sender: Any) {
 //        Textfield error handling
         
-        FIRPushController.pushNewMenuItemtoFirebase(name: NameTextField.text!, price: Double(PriceTextField.text!)!, image: MyImage!)
+        guard ((NameTextField.text?.characters.count)! > 0) else {
+            showinvalidNameErrorDialg()
+            return
+        }
+        guard (Double(PriceTextField.text!) != nil) else {
+            showinvalidPriceErrorDialg()
+            return
+        }
+        
+        if ((NewItemImageView.image == #imageLiteral(resourceName: "one"))){
+            showinvalidImageErrorDialg()
+            return
+        }
+        
+        var tempprice : Double = Double(PriceTextField.text!)!
+        tempprice = (tempprice * 100).rounded()/100
         
         
-        let progressView = ProgressView(text: "Speisekarteneintrag hochladen")
+        FIRPushController.pushNewMenuItemtoFirebase(name: NameTextField.text!, price: tempprice, image: MyImage!)
+
         self.view.addSubview(progressView)
+        progressView.show()
+        
         
     }
     
@@ -80,16 +102,48 @@ class NewMenuItemViewController: UIViewController, UIImagePickerControllerDelega
         }
     }
     
-    func showinvalidPriceErrorDialg(){
+    func uploadFinished(){
+        MyImage = #imageLiteral(resourceName: "one")
+        NewItemImageView.image = #imageLiteral(resourceName: "one")
+        NameTextField.text = ""
+        PriceTextField.text = ""
+        
+        progressView.hide()
+        
+        let alertSheetController = UIAlertController(title: "Upload erfolgreich", message: "Sie können noch weitere Produkte ihrer Speisekarte hinzufügen",preferredStyle: .alert)
+        
+        let enterAction = UIAlertAction(title: "Ok", style: .default) { action -> Void in}
+        alertSheetController.addAction(enterAction)
+        
+        self.present(alertSheetController, animated: true) {}
+    }
     
+    func showinvalidPriceErrorDialg(){
+        let alertSheetController = UIAlertController(title: "Ungültigen Preis eingegeben", message: "Bitte geben sie den Preis in folgenden Format ein : 4.20",preferredStyle: .alert)
+        
+        let enterAction = UIAlertAction(title: "Ok", style: .default) { action -> Void in}
+        alertSheetController.addAction(enterAction)
+        
+        self.present(alertSheetController, animated: true) {}
     }
     
     func showinvalidNameErrorDialg(){
+        let alertSheetController = UIAlertController(title: "Keinen Namen eingegeben", message: "Bitte geben sie einen Namen für ihr Produkt in das Textfeld ein",preferredStyle: .alert)
+        
+        let enterAction = UIAlertAction(title: "Ok", style: .default) { action -> Void in}
+        alertSheetController.addAction(enterAction)
+        
+        self.present(alertSheetController, animated: true) {}
         
     }
 
     func showinvalidImageErrorDialg(){
+        let alertSheetController = UIAlertController(title: "Kein Foto eingegeben", message: "Bitte fügen sie ein Bild hinzu",preferredStyle: .alert)
         
+        let enterAction = UIAlertAction(title: "Ok", style: .default) { action -> Void in}
+        alertSheetController.addAction(enterAction)
+        
+        self.present(alertSheetController, animated: true) {}
     }
 
     
