@@ -28,6 +28,8 @@ class NewMenuItemViewController: UIViewController, UIImagePickerControllerDelega
         
         let nc = NotificationCenter.default
         nc.addObserver(self, selector: #selector(uploadFinished), name: Notification.Name("firemenuuploadsucessful"), object: nil)
+        nc.addObserver(self, selector: #selector(uploadFinished), name: Notification.Name("firemenuuploadfail"), object: nil)
+
         
 
         // Do any additional setup after loading the view.
@@ -100,6 +102,15 @@ class NewMenuItemViewController: UIViewController, UIImagePickerControllerDelega
             print("Ready")
 
         }
+    }
+    
+    func uploadfail(){
+        let alertSheetController = UIAlertController(title: "Fehler bei Upload", message: "Bei dem Upload ist ein Fehler aufgetreten, bitte versuchen sie es erneut",preferredStyle: .alert)
+        
+        let enterAction = UIAlertAction(title: "Ok", style: .default) { action -> Void in}
+        alertSheetController.addAction(enterAction)
+        
+        self.present(alertSheetController, animated: true) {}
     }
     
     func uploadFinished(){
